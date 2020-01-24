@@ -31,7 +31,7 @@ public class leet {
         List<Character> result = new ArrayList<>(upperCharcount.keySet());
         Collections.sort(result);
 
-        return String.valueOf(result.get(result.size()-1));
+        return result.size()> 0? String.valueOf(result.get(result.size()-1)):"NO";
 
     }
 }
